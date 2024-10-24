@@ -127,8 +127,8 @@ public:
     void controlSmartLights() {
         for (int i = 0; i < 3; ++i) {
             smartLights[i].turnOn();
-            smartLights[i].dimLight(50);  // Dims each light to 50%
-            smartLights[i].scheduleLightOn(18);  // Schedules each light to turn on at 18:00
+            smartLights[i].dimLight(50);  // Dim each light to 50%
+            smartLights[i].scheduleLightOn(18);  // Schedule each light to turn on at 18:00
         }
     }
 
@@ -155,7 +155,6 @@ int main() {
 
     // Show the status of appliances
     homeControl.showStatus();
-
 
     return 0;
 }
